@@ -19,3 +19,10 @@ legend {
   color: var(--text-primary);
   margin-bottom: 1.5rem;
 }
+
+.actions-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
