@@ -1,0 +1,11 @@
+header {
+  background-color: var(--surface-secondary);
+
+  & .container {
+    flex-direction: column;
+
+    & img:first-child {
+      width: 12.6875rem;
+    }
+  }
+}
