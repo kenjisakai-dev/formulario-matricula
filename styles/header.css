@@ -1,11 +1,13 @@
-header {
-  background-color: var(--surface-secondary);
+#app {
+  & > header {
+    background-color: var(--surface-secondary);
 
-  & .container {
-    flex-direction: column;
+    & .container {
+      flex-direction: column;
 
-    & img:first-child {
-      width: 12.6875rem;
+      & img:first-child {
+        width: 12.6875rem;
+      }
     }
   }
 }

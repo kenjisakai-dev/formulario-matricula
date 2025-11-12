@@ -53,9 +53,15 @@ html {
   color: var(--text-secondary);
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h1 {
   font: var(--fw-semibold) var(--fs-xl) / 125% var(--font-family);
   color: var(--text-primary);
+  margin-block: 1.5rem 0.5rem;
 }
 
 img {
