@@ -1,0 +1,12 @@
+fieldset {
+  display: grid;
+  gap: 1.25rem;
+
+  border: none;
+}
+
+legend {
+  font: var(--fw-semibold) var(--fs-md) / 125% var(--font-family);
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
