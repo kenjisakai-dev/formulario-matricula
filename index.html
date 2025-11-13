@@ -39,7 +39,7 @@
             </p>
           </header>
 
-          <form method="GET" enctype="multipart/form-data">
+          <form method="GET" enctype="multipart/form-data" class="grid gap-3">
             <fieldset id="child-info">
               <legend>Informações da criança</legend>
 
@@ -122,6 +122,53 @@
                     selecionar arquivos
                   </span>
                 </div>
+              </div>
+            </fieldset>
+
+            <fieldset id="address">
+              <legend>Endereço residencial</legend>
+
+              <div class="input-wrapper">
+                <label for="cep">CEP</label>
+                <input id="cep" type="text" name="cep" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="street">Rua</label>
+                <input
+                  id="street"
+                  type="text"
+                  name="street"
+                  placeholder="Rua das Flores"
+                  disabled
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="number">Número</label>
+                <input id="number" type="number" name="number" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="city">Cidade</label>
+                <input
+                  id="city"
+                  type="text"
+                  name="city"
+                  placeholder="São Paulo"
+                  disabled
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="state">Estado</label>
+                <input
+                  id="state"
+                  type="text"
+                  name="state"
+                  placeholder="SP"
+                  disabled
+                />
               </div>
             </fieldset>
           </form>
