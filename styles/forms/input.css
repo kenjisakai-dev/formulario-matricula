@@ -3,13 +3,10 @@ label {
   margin-bottom: 0.25rem;
 }
 
-input[type="text"],
-input[type="date"],
-input[type="number"],
+input,
 select,
 textarea {
   appearance: none;
-
   width: 100%;
   padding-block: 0.75rem;
   padding-inline: 1rem;
@@ -21,9 +18,7 @@ textarea {
   color: var(--text-tertiary);
 }
 
-input[type="text"],
-input[type="date"],
-input[type="number"],
+input,
 select:has(:checked),
 textarea {
   &:valid {
@@ -60,10 +55,50 @@ input[type="date"] {
   }
 }
 
-input[type="number"] {
-  appearance: initial;
-}
-
 label:has(+ input:disabled) {
   color: var(--text-tertiary);
+}
+
+.warning {
+  margin-top: 0.25rem;
+
+  & small {
+    font: var(--fw-regular) var(--fs-sm) / 140% var(--font-family);
+    color: var(--semantic-warning);
+  }
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+
+  & small {
+    font: var(--fw-regular) var(--fs-sm) / 140% var(--font-family);
+    color: var(--semantic-error);
+  }
+}
+
+input:has(+ .error) {
+  color: var(--text-primary);
+  outline: none;
+
+  &:invalid,
+  &:focus:invalid {
+    border-color: var(--semantic-error);
+  }
+
+  &:focus:valid {
+    border-color: var(--stroke-highlight);
+    outline: 0.25rem solid var(--surface-secondary);
+  }
+
+  &:valid {
+    outline: 1px solid var(--stroke-default);
+
+    & + .error {
+      display: none;
+    }
+  }
 }

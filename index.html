@@ -171,6 +171,43 @@
                 />
               </div>
             </fieldset>
+
+            <fieldset id="responsible">
+              <legend>Informações do responsável</legend>
+
+              <div class="input-wrapper">
+                <label for="name-responsible">Nome do responsável</label>
+                <input
+                  id="name-responsible"
+                  type="text"
+                  name="name-responsible"
+                />
+                <div class="warning">
+                  <small>
+                    Principal responsável legal e contato de emergência
+                  </small>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="(10) 9 8765-4321"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" name="email" required />
+                <div class="error">
+                  <img src="assets/icons/alert.svg" alt="ícone de alerta" />
+                  <small>Insira um e-mail válido</small>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
