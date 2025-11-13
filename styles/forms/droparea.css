@@ -1,0 +1,36 @@
+.droparea {
+  border: 2px dashed transparent;
+  outline: 1px dashed var(--stroke-default);
+  border-radius: 0.5rem;
+
+  position: relative;
+
+  display: grid;
+  gap: 0.5rem;
+  justify-items: center;
+  padding-block: 1.75rem;
+
+  &:focus,
+  &:focus-within,
+  &:hover {
+    background-color: var(--surface-secondary);
+    border-color: var(--stroke-highlight);
+    outline-width: 0;
+    color: var(--text-tertiary);
+
+    & svg path {
+      stroke: var(--brand-light);
+    }
+  }
+
+  & input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  & span {
+    color: var(--text-quaternary);
+  }
+}

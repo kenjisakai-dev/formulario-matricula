@@ -1,0 +1,10 @@
+select {
+  background: url("../../assets/icons/arrow-down.svg") no-repeat
+    calc(100% - 1rem) center;
+
+  &:focus,
+  &:focus-within {
+    background: url("../../assets/icons/arrow-up.svg") no-repeat
+      calc(100% - 1rem) center;
+  }
+}
