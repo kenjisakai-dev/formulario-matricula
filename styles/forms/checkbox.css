@@ -1,0 +1,40 @@
+.checkbox-wrapper {
+  position: relative;
+  align-items: flex-start;
+
+  & input[type="checkbox"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+
+  & .checkbox-image {
+    background: url("../../assets/icons/checkbox.svg");
+    flex: 0 0 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &:hover,
+  &:focus-within {
+    & .checkbox-image {
+      background: url("../../assets/icons/checkbox-hover.svg");
+    }
+  }
+
+  &:has(:checked) {
+    & .checkbox-image {
+      background: url("../../assets/icons/checkbox-check.svg");
+    }
+  }
+
+  & label {
+    color: var(--text-secondary);
+    margin: 0;
+
+    & strong {
+      color: var(--brand-dark);
+      font-weight: 500;
+    }
+  }
+}
