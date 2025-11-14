@@ -30,7 +30,7 @@
     cursor: pointer;
   }
 
-  & span {
+  & label {
     color: var(--text-quaternary);
   }
 }

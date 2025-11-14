@@ -116,11 +116,11 @@
                       stroke-linejoin="round"
                     />
                   </svg>
-                  <span>
+                  <label>
                     Clique aqui para
                     <br />
                     selecionar arquivos
-                  </span>
+                  </label>
                 </div>
               </div>
             </fieldset>
@@ -213,38 +213,141 @@
               <legend>Opções de matrícula</legend>
 
               <div class="input-wrapper">
-                <label for="shift">Selecione o turno de estudo</label>
+                <label>Selecione o turno de estudo</label>
 
-                <div id="shift" class="radio-wrapper grid gap-1">
+                <div class="radio-wrapper">
                   <div class="radio-option">
                     <input
-                      id="period"
+                      id="morning"
                       type="radio"
                       name="period"
                       value="morning"
                     />
 
-                    <span class="icon-circle"></span>
+                    <span class="radio-image"></span>
 
                     <div class="option">
-                      <img src="assets/icons/cloud.svg" alt="ícone de manhã" />
-                      <span>Manhã</span>
+                      <img
+                        src="assets/icons/cloud.svg"
+                        alt="ícone de sol com nuvem"
+                      />
+                      <label for="morning">Manhã</label>
                     </div>
                   </div>
 
                   <div class="radio-option">
                     <input
-                      id="period"
+                      id="afternoon"
                       type="radio"
                       name="period"
                       value="afternoon"
                     />
 
-                    <span class="icon-circle"></span>
+                    <span class="radio-image"></span>
 
                     <div class="option">
-                      <img src="assets/icons/sun.svg" alt="ícone de manhã" />
-                      <span>Tarde</span>
+                      <img src="assets/icons/sun.svg" alt="ícone de sol" />
+                      <label for="afternoon">Tarde</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label>
+                  Em qual esporte você gostaria de inscrever seu filho?
+                </label>
+
+                <div class="radio-wrapper">
+                  <div class="radio-option">
+                    <input
+                      id="football"
+                      type="radio"
+                      name="sport"
+                      value="football"
+                    />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img
+                        src="assets/icons/football.svg"
+                        alt="ícone de futebol"
+                      />
+                      <label for="football">Futebol</label>
+                    </div>
+                  </div>
+
+                  <div class="radio-option">
+                    <input
+                      id="basketball"
+                      type="radio"
+                      name="sport"
+                      value="basketball"
+                    />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img
+                        src="assets/icons/basketball.svg"
+                        alt="ícone de basquete"
+                      />
+                      <label for="basketball">Basquete</label>
+                    </div>
+                  </div>
+
+                  <div class="radio-option">
+                    <input
+                      id="swimming"
+                      type="radio"
+                      name="sport"
+                      value="swimming"
+                    />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img
+                        src="assets/icons/swimming.svg"
+                        alt="ícone de natação"
+                      />
+                      <label for="swimming">Natação</label>
+                    </div>
+                  </div>
+
+                  <div class="radio-option">
+                    <input id="yoga" type="radio" name="sport" value="yoga" />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img src="assets/icons/yoga.svg" alt="ícone de yoga" />
+                      <label for="yoga">Yoga</label>
+                    </div>
+                  </div>
+
+                  <div class="radio-option">
+                    <input
+                      id="volley"
+                      type="radio"
+                      name="sport"
+                      value="volley"
+                    />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img
+                        src="assets/icons/volley.svg"
+                        alt="ícone de volley"
+                      />
+                      <label for="volley">Volley</label>
+                    </div>
+                  </div>
+
+                  <div class="radio-option">
+                    <input id="box" type="radio" name="sport" value="box" />
+                    <span class="radio-image"></span>
+
+                    <div class="option">
+                      <img src="assets/icons/box.svg" alt="ícone de box" />
+                      <label for="box">Box</label>
                     </div>
                   </div>
                 </div>
