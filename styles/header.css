@@ -3,7 +3,7 @@
     background-color: var(--surface-secondary);
 
     & .container {
-      flex-direction: column;
+      justify-items: center;
 
       & img:first-child {
         width: 12.6875rem;

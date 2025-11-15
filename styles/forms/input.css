@@ -1,6 +1,10 @@
 label {
   display: inline-block;
   margin-bottom: 0.25rem;
+
+  &:has(+ input:disabled) {
+    color: var(--text-tertiary);
+  }
 }
 
 input,
@@ -16,11 +20,7 @@ textarea {
 
   font: var(--fw-regular) var(--fs-md) / 150% var(--font-family);
   color: var(--text-tertiary);
-}
 
-input,
-select:has(:checked),
-textarea {
   &:valid {
     color: var(--text-primary);
   }
@@ -34,6 +34,10 @@ textarea {
   &:disabled {
     background-color: var(--surface-disabled);
   }
+}
+
+input[type="number"] {
+  appearance: initial;
 }
 
 input[type="date"] {
@@ -52,53 +56,5 @@ input[type="date"] {
     right: 1rem;
     top: 50%;
     transform: translateY(-50%);
-  }
-}
-
-label:has(+ input:disabled) {
-  color: var(--text-tertiary);
-}
-
-.warning {
-  margin-top: 0.25rem;
-
-  & small {
-    font: var(--fw-regular) var(--fs-sm) / 140% var(--font-family);
-    color: var(--semantic-warning);
-  }
-}
-
-.error {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
-  margin-top: 0.25rem;
-
-  & small {
-    font: var(--fw-regular) var(--fs-sm) / 140% var(--font-family);
-    color: var(--semantic-error);
-  }
-}
-
-input:has(+ .error) {
-  color: var(--text-primary);
-  outline: none;
-
-  &:invalid,
-  &:focus:invalid {
-    border-color: var(--semantic-error);
-  }
-
-  &:focus:valid {
-    border-color: var(--stroke-highlight);
-    outline: 0.25rem solid var(--surface-secondary);
-  }
-
-  &:valid {
-    outline: 1px solid var(--stroke-default);
-
-    & + .error {
-      display: none;
-    }
   }
 }

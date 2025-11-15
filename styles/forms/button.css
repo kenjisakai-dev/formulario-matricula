@@ -10,6 +10,16 @@
     cursor: pointer;
   }
 
+  & .btn-primary {
+    background: var(--brand-dark);
+    color: var(--surface-primary);
+
+    &:hover,
+    &:focus {
+      background: var(--brand-mid);
+    }
+  }
+
   & .btn-secondary {
     background: var(--surface-primary);
     color: var(--text-highlight);
@@ -18,16 +28,6 @@
     &:hover,
     &:focus {
       outline: 0.25rem solid var(--surface-secondary);
-    }
-  }
-
-  & .btn-primary {
-    background: var(--brand-dark);
-    color: var(--surface-primary);
-
-    &:hover,
-    &:focus {
-      background: var(--brand-mid);
     }
   }
 }

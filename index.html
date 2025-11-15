@@ -18,7 +18,7 @@
   <body>
     <div id="app">
       <header>
-        <div class="container py-md flex items-center gap-0.75">
+        <div class="container py-md grid gap-0.75">
           <img src="assets/logo.png" alt="logomarca" />
           <img src="assets/illustration.png" alt="imagem estrelas do amanhã" />
         </div>
@@ -39,7 +39,7 @@
             </p>
           </header>
 
-          <form method="GET" enctype="multipart/form-data" class="grid gap-3">
+          <form method="POST" enctype="multipart/form-data" class="grid gap-3">
             <fieldset id="child-info">
               <legend>Informações da criança</legend>
 
@@ -94,6 +94,7 @@
                     name="birth-certificate"
                     accept="image/*"
                   />
+
                   <svg
                     width="48"
                     height="48"
@@ -116,6 +117,7 @@
                       stroke-linejoin="round"
                     />
                   </svg>
+
                   <label>
                     Clique aqui para
                     <br />
@@ -182,6 +184,7 @@
                   type="text"
                   name="name-responsible"
                 />
+
                 <div class="warning">
                   <small>
                     Principal responsável legal e contato de emergência
@@ -216,7 +219,7 @@
                 <label>Selecione o turno de estudo</label>
 
                 <div class="radio-wrapper">
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="morning"
                       type="radio"
@@ -225,17 +228,14 @@
                     />
 
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img
-                        src="assets/icons/cloud.svg"
-                        alt="ícone de sol com nuvem"
-                      />
-                      <label for="morning">Manhã</label>
-                    </div>
+                    <img
+                      src="assets/icons/cloud.svg"
+                      alt="ícone de sol com nuvem"
+                    />
+                    <label for="morning">Manhã</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="afternoon"
                       type="radio"
@@ -244,11 +244,8 @@
                     />
 
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img src="assets/icons/sun.svg" alt="ícone de sol" />
-                      <label for="afternoon">Tarde</label>
-                    </div>
+                    <img src="assets/icons/sun.svg" alt="ícone de sol" />
+                    <label for="afternoon">Tarde</label>
                   </div>
                 </div>
               </div>
@@ -259,7 +256,7 @@
                 </label>
 
                 <div class="radio-wrapper">
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="football"
                       type="radio"
@@ -267,17 +264,14 @@
                       value="football"
                     />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img
-                        src="assets/icons/football.svg"
-                        alt="ícone de futebol"
-                      />
-                      <label for="football">Futebol</label>
-                    </div>
+                    <img
+                      src="assets/icons/football.svg"
+                      alt="ícone de futebol"
+                    />
+                    <label for="football">Futebol</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="basketball"
                       type="radio"
@@ -285,17 +279,14 @@
                       value="basketball"
                     />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img
-                        src="assets/icons/basketball.svg"
-                        alt="ícone de basquete"
-                      />
-                      <label for="basketball">Basquete</label>
-                    </div>
+                    <img
+                      src="assets/icons/basketball.svg"
+                      alt="ícone de basquete"
+                    />
+                    <label for="basketball">Basquete</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="swimming"
                       type="radio"
@@ -303,27 +294,21 @@
                       value="swimming"
                     />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img
-                        src="assets/icons/swimming.svg"
-                        alt="ícone de natação"
-                      />
-                      <label for="swimming">Natação</label>
-                    </div>
+                    <img
+                      src="assets/icons/swimming.svg"
+                      alt="ícone de natação"
+                    />
+                    <label for="swimming">Natação</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input id="yoga" type="radio" name="sport" value="yoga" />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img src="assets/icons/yoga.svg" alt="ícone de yoga" />
-                      <label for="yoga">Yoga</label>
-                    </div>
+                    <img src="assets/icons/yoga.svg" alt="ícone de yoga" />
+                    <label for="yoga">Yoga</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input
                       id="volley"
                       type="radio"
@@ -331,24 +316,15 @@
                       value="volley"
                     />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img
-                        src="assets/icons/volley.svg"
-                        alt="ícone de volley"
-                      />
-                      <label for="volley">Volley</label>
-                    </div>
+                    <img src="assets/icons/volley.svg" alt="ícone de volley" />
+                    <label for="volley">Volley</label>
                   </div>
 
-                  <div class="radio-option">
+                  <div class="radio-inner">
                     <input id="box" type="radio" name="sport" value="box" />
                     <span class="radio-image"></span>
-
-                    <div class="option">
-                      <img src="assets/icons/box.svg" alt="ícone de box" />
-                      <label for="box">Box</label>
-                    </div>
+                    <img src="assets/icons/box.svg" alt="ícone de box" />
+                    <label for="box">Box</label>
                   </div>
                 </div>
               </div>
@@ -356,11 +332,9 @@
 
             <div id="term">
               <div class="checkbox-wrapper flex gap-0.75">
-                <input id="term" type="checkbox" name="term" value="true" />
-
+                <input id="terms" type="checkbox" name="terms" value="true" />
                 <div class="checkbox-image"></div>
-
-                <label for="term">
+                <label for="terms">
                   Declaro que li e concordo com os
                   <strong>Termos e Condições</strong> e com a
                   <strong>Política de Privacidade</strong> da escola Estrela do

@@ -31,10 +31,10 @@
   & label {
     color: var(--text-secondary);
     margin: 0;
+  }
 
-    & strong {
-      color: var(--brand-dark);
-      font-weight: var(--fw-semibold);
-    }
+  & strong {
+    color: var(--brand-dark);
+    font-weight: var(--fw-semibold);
   }
 }
