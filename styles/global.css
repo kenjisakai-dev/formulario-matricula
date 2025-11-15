@@ -25,24 +25,14 @@
   --semantic-warning: #78716c;
   --semantic-error: #dc2626;
 
-  --orange: #f9a474;
-  --yellow: #fedf6f;
-  --green: #c7d78d;
-  --blue: #b8cedc;
-  --violet: #c3b2e7;
-  --pink: #f682a5;
-
   --font-family: "Poppins", sans-serif;
 
   --fw-regular: 400;
-  --fw-semibold: 600;
-  --fw-bold: 700;
+  --fw-semibold: 500;
 
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
-  --fs-lg: 1.25rem;
-  --fs-xl: 1.5rem;
-  --fs-2xl: 2rem;
+  --fs-lg: 1.5rem;
 
   --py-md: 1.5rem;
   --py-lg: 2rem;
@@ -61,7 +51,7 @@ a {
 }
 
 h1 {
-  font: var(--fw-semibold) var(--fs-xl) / 125% var(--font-family);
+  font: var(--fw-semibold) var(--fs-lg) / 125% var(--font-family);
   color: var(--text-primary);
   margin-block: 1.5rem 0.5rem;
 }

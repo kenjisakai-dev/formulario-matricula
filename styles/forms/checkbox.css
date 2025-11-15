@@ -34,7 +34,7 @@
 
     & strong {
       color: var(--brand-dark);
-      font-weight: 500;
+      font-weight: var(--fw-semibold);
     }
   }
 }
