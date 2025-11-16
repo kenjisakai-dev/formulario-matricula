@@ -1,7 +1,11 @@
+& label:has(+ .radio-wrapper) {
+  margin-bottom: 1rem;
+}
+
 .radio-wrapper {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
 }
 
 .radio-inner {
@@ -10,8 +14,7 @@
   outline: 1px solid var(--stroke-default);
   border: 2px solid transparent;
   border-radius: 0.5rem;
-  padding-block: 2rem 1rem;
-  padding-inline: 1rem;
+  padding-block: 2rem 0.5rem;
 
   position: relative;
 
@@ -51,7 +54,6 @@
   }
 
   & label {
-    font-weight: var(--fw-semibold);
-    margin-block: 0.5rem 0;
+    margin-block: 0.5rem 0.25rem;
   }
 }

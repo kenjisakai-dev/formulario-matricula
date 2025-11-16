@@ -1,6 +1,6 @@
 @import url("global.css");
 @import url("utilities.css");
+@import url("layout.css") (width >= 1280px);
 @import url("header.css");
 @import url("forms/index.css");
-@import url("footer.css");
 @import url("alerts.css");

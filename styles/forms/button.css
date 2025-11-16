@@ -1,9 +1,10 @@
 .button-wrapper {
+  flex-direction: column;
   margin-top: 1rem;
 
   & button {
     all: unset;
-    font: var(--fw-semibold) var(--fs-md) / 150% var(--font-family);
+    font: var(--fw-md) var(--fs-md) / 150% var(--font-family);
     text-align: center;
     border-radius: 0.5rem;
     padding: 0.75rem 1.5rem;
@@ -29,5 +30,10 @@
     &:focus {
       outline: 0.25rem solid var(--surface-secondary);
     }
+  }
+
+  @media (width >= 1280px) {
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }

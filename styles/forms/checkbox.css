@@ -35,6 +35,6 @@
 
   & strong {
     color: var(--brand-dark);
-    font-weight: var(--fw-semibold);
+    font-weight: var(--fw-md);
   }
 }

@@ -25,13 +25,12 @@ input:has(+ .error) {
   color: var(--text-primary);
   outline: none;
 
-  &:invalid,
-  &:focus:invalid {
+  &:invalid {
     border-color: var(--semantic-error);
   }
 
+  &:focus,
   &:focus:valid {
-    border-color: var(--stroke-highlight);
     outline: 0.25rem solid var(--surface-secondary);
   }
 

@@ -5,7 +5,7 @@ fieldset {
 }
 
 legend {
-  font: var(--fw-semibold) var(--fs-md) / 125% var(--font-family);
+  font: var(--fw-lg) var(--fs-md) / 125% var(--font-family);
   color: var(--text-primary);
   margin-bottom: 1.25rem;
 }

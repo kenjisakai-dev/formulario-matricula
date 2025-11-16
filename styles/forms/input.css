@@ -2,6 +2,8 @@ label {
   display: inline-block;
   margin-bottom: 0.25rem;
 
+  font: var(--fw-regular) var(--fs-sm) / 140% var(--font-family);
+
   &:has(+ input:disabled) {
     color: var(--text-tertiary);
   }

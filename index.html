@@ -17,7 +17,7 @@
   </head>
   <body>
     <div id="app">
-      <header>
+      <header class="mobile-only">
         <div class="container py-md grid gap-0.75">
           <img src="assets/logo.png" alt="logomarca" />
           <img src="assets/illustration.png" alt="imagem estrelas do amanhã" />
@@ -25,7 +25,7 @@
       </header>
 
       <main class="py-md">
-        <div class="container grid gap-3">
+        <div class="container main-container grid gap-3">
           <header>
             <a href="#" class="flex items-center gap-0.5">
               <img src="assets/icons/arrow-left.svg" alt="ícone de seta" />
@@ -135,42 +135,46 @@
                 <input id="cep" type="text" name="cep" />
               </div>
 
-              <div class="input-wrapper">
-                <label for="street">Rua</label>
-                <input
-                  id="street"
-                  type="text"
-                  name="street"
-                  placeholder="Rua das Flores"
-                  disabled
-                />
+              <div class="flex even-columns gap-1.25">
+                <div class="input-wrapper flex-2">
+                  <label for="street">Rua</label>
+                  <input
+                    id="street"
+                    type="text"
+                    name="street"
+                    placeholder="Rua das Flores"
+                    disabled
+                  />
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input id="number" type="number" name="number" />
+                </div>
               </div>
 
-              <div class="input-wrapper">
-                <label for="number">Número</label>
-                <input id="number" type="number" name="number" />
-              </div>
+              <div class="flex even-columns gap-1.25">
+                <div class="input-wrapper flex-2">
+                  <label for="city">Cidade</label>
+                  <input
+                    id="city"
+                    type="text"
+                    name="city"
+                    placeholder="São Paulo"
+                    disabled
+                  />
+                </div>
 
-              <div class="input-wrapper">
-                <label for="city">Cidade</label>
-                <input
-                  id="city"
-                  type="text"
-                  name="city"
-                  placeholder="São Paulo"
-                  disabled
-                />
-              </div>
-
-              <div class="input-wrapper">
-                <label for="state">Estado</label>
-                <input
-                  id="state"
-                  type="text"
-                  name="state"
-                  placeholder="SP"
-                  disabled
-                />
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input
+                    id="state"
+                    type="text"
+                    name="state"
+                    placeholder="SP"
+                    disabled
+                  />
+                </div>
               </div>
             </fieldset>
 
@@ -344,7 +348,7 @@
             </div>
 
             <div id="buttons">
-              <div class="button-wrapper grid gap-1">
+              <div class="button-wrapper flex gap-1">
                 <button type="button" class="btn-secondary">
                   Salvar respostas
                 </button>
@@ -357,7 +361,23 @@
         </div>
       </main>
 
-      <footer></footer>
+      <aside class="desktop-only">
+        <div class="aside-container">
+          <header>
+            <img src="assets/logo.svg" alt="logomarca estrelas do amanhã" />
+            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <p>
+              Inscreva seu filho em nossa escola e veja-o florescer em um
+              ambiente acolhedor, seguro e estimulante.
+            </p>
+          </header>
+
+          <img
+            src="assets/illustration.png"
+            alt="imagem de crianças colorindo"
+          />
+        </div>
+      </aside>
     </div>
   </body>
 </html>

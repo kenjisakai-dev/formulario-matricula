@@ -28,16 +28,25 @@
   --font-family: "Poppins", sans-serif;
 
   --fw-regular: 400;
-  --fw-semibold: 500;
+  --fw-md: 500;
+  --fw-lg: 600;
 
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-lg: 1.5rem;
+  --fs-xl: 2.5rem;
 
   --py-md: 1.5rem;
   --py-lg: 2rem;
 
   --px-md: 1.5rem;
+}
+
+@media (width >= 1280px) {
+  :root {
+    --py-md: 4rem;
+    --px-md: 4rem;
+  }
 }
 
 html {
@@ -46,14 +55,26 @@ html {
 }
 
 a {
+  width: fit-content;
   text-decoration: none;
   color: inherit;
+  outline: none;
 }
 
 h1 {
-  font: var(--fw-semibold) var(--fs-lg) / 125% var(--font-family);
+  font: var(--fw-lg) var(--fs-lg) / 125% var(--font-family);
   color: var(--text-primary);
   margin-block: 1.5rem 0.5rem;
+}
+
+h2 {
+  font: var(--fw-lg) var(--fs-xl) / 125% var(--font-family);
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+
+  & span {
+    color: var(--text-highlight);
+  }
 }
 
 img {
