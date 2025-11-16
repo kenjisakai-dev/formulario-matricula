@@ -13,9 +13,11 @@ input,
 select,
 textarea {
   appearance: none;
+  -webkit-appearance: none;
   width: 100%;
   padding-block: 0.75rem;
   padding-inline: 1rem;
+  background: var(--surface-primary);
   border: 2px solid transparent;
   outline: 1px solid var(--stroke-default);
   border-radius: 0.5rem;
